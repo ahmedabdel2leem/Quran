@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 6;
+  }
+  
+.card{
+    @apply bg-black text-white text-center
+}
+span:hover{
+    color: rgb(38, 191, 191);
+}
