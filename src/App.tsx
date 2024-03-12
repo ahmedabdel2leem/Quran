@@ -1,9 +1,13 @@
+import { Provider, useDispatch } from 'react-redux'
 import './App.css'
-import Quran from './Components/Quran/Quran'
+// import QPage from './Components/QPage/QPage'
+import QVerse from './Components/QVerse/QVerse'
+import { getAllTheQuran } from './store/store';
 function App() {
   return <>
-
-  <Quran/>
+<Provider store={getAllTheQuran}>
+  <QVerse/>
+</Provider>
   </>
 }
 
